@@ -81,11 +81,8 @@ lessonTimes.forEach((value, index) => {
   )
 })
 
-bot.command('lol', ctx => {
-  bot.telegram.sendMessage(
-    process.env.CHAT_ID,
-    'Нема звіра сильнішого за китайця, саня смокче комусь яйця'
-  )
+bot.command('test', ctx => {
+  ctx.reply('all works')
 })
 
 bot.command('shedule', ctx => {
