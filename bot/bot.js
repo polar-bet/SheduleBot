@@ -56,7 +56,6 @@ cron.schedule(
 
 lessonTimes.forEach((value, index) => {
   const [hour, minute] = value.split(':')
-
   const earlierMin = (minute - 1 + 60) % 60
 
   cron.schedule(
@@ -70,7 +69,8 @@ lessonTimes.forEach((value, index) => {
         const chatId = process.env.CHAT_ID
 
         if (days.includes(dayInKyiv)) {
-          const lesson = shedule[dayInKyiv][index]
+          const lesson = shedule[dayInKyiv].find(l => l.time === value)
+
           if (lesson) {
             sendLessonReminder(chatId, lesson)
           }
