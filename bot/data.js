@@ -10,7 +10,7 @@ export const days = [
 ]
 
 const links = {
-  bondarenko: 'https://meet.google.com/ezq-bvgc-yyg',
+  bondarenko: 'https://meet.google.com/ezq-bvqc-yyq',
   shpak: 'https://meet.google.com/rxz-ebra-kdb',
   hodanych: 'https://meet.google.com/rme-ubqo-hgn',
   poyda: 'https://meet.google.com/pxd-mdcj-hzh',
